@@ -1,7 +1,6 @@
 import ContactsForm from 'components/ContactsForm/ContactsForm';
 import ContactsList from 'components/ContactsList/ContactsList';
 import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { useEffect } from 'react';
 import { fetchContacts } from 'redux/contacts/operations';
 import css from './Contacts.module.css';
