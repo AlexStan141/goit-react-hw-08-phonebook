@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useAuth } from 'hooks/useAuth';
-import { useEffect, lazy } from 'react';
+import { useEffect } from 'react';
 import { getCurrentUserData } from 'redux/users/operations';
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout/Layout';

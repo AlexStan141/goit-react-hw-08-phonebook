@@ -6,7 +6,7 @@ import { AuthChanger } from 'components/AuthChanger/AuthChanger';
 export const Layout = () => {
   return (
     <>
-      <img src={background} className={css.background}></img>
+      <img src={background} alt="" className={css.background}></img>
       <div className={css.auth}>
         <AuthChanger></AuthChanger>
         <hr></hr>

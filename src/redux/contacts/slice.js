@@ -54,7 +54,7 @@ const contactsSlice = createSlice({
       state.isLoading = false;
       state.error = false;
       const index = state.items.findIndex(
-        contact => contact.id == action.payload.id
+        contact => contact.id === action.payload.id
       );
       state.items[index].name = action.payload.name;
       state.items[index].number = action.payload.number;
