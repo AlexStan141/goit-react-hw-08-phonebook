@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    box-shadow: -3px 0 lightgreen;
+    margin-bottom: 30px;
+    gap: 100px;
+    align-items: center;
+}
+
+.infoMode {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.info,
+.editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.actions {
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+.data {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: green;
+}
+
+.lastInput {
+    margin-bottom: 5px;
+}

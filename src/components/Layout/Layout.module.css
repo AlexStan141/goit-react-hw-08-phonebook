@@ -1,0 +1,19 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.auth {
+    position: absolute;
+    top: 15vh;
+    left: 30vw;
+    width: 40vw;
+    height: 70vh;
+    z-index: -1;
+    background-color: white;
+    border-radius: 20px;
+}

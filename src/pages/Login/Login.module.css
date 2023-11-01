@@ -1,0 +1,29 @@
+.form {
+    margin-top: 50px;
+}
+
+.label {
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.input:nth-of-type(1) {
+    margin-left: 85px;
+}
+
+.input:nth-of-type(2) {
+    margin-left: 60px;
+}
+
+.button {
+    margin-top: 50px;
+    margin-left: 30px;
+    border-width: 0;
+    border-radius: 2px;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    display: block;
+    width: 100px;
+    height: 30px;
+}
