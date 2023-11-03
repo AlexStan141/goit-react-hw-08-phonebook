@@ -1,0 +1,7 @@
+.welcomeMessage {
+    position: absolute;
+    top: 45%;
+    left: 37.5%;
+    font-weight: 700;
+    font-size: 30px;
+}

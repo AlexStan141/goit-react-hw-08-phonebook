@@ -9,6 +9,7 @@ import { PrivateRoute } from './PrivateRoute';
 import { Register } from 'pages/Register/Register';
 import { Login } from 'pages/Login/Login';
 import { Contacts } from 'pages/Contacts/Contacts';
+import { Welcome } from './Welcome/Welcome';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -22,23 +23,29 @@ export const App = () => {
     <b>Refreshing user...</b>
   ) : (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/goit-react-hw-08-phonebook" element={<Layout />}>
+        <Route index element={<Welcome></Welcome>}></Route>
         <Route
-          index
+          path="register"
           element={
             <RestrictedRoute redirectTo="/contacts" component={<Register />} />
           }
         />
         <Route
-          path="/login"
+          path="login"
           element={
             <RestrictedRoute redirectTo="/contacts" component={<Login />} />
           }
         />
       </Route>
       <Route
-        path="/contacts"
-        element={<PrivateRoute redirectTo="/login" component={<Contacts />} />}
+        path="contacts"
+        element={
+          <PrivateRoute
+            redirectTo="/goit-react-hw-08-phonebook"
+            component={<Contacts />}
+          />
+        }
       />
     </Routes>
   );

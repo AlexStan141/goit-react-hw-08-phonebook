@@ -15,8 +15,10 @@ const StyledLink = styled(NavLink)`
 export const AuthChanger = () => {
   return (
     <div className={css.container}>
-      <StyledLink to="/">Register</StyledLink>
-      <StyledLink to="/login">Login</StyledLink>
+      <StyledLink to="/goit-react-hw-08-phonebook/register">
+        Register
+      </StyledLink>
+      <StyledLink to="/goit-react-hw-08-phonebook/login">Login</StyledLink>
     </div>
   );
 };

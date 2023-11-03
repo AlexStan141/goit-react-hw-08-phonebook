@@ -1,9 +1,12 @@
 import { logIn } from 'redux/users/operations';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import css from './Login.module.css';
+import { selectIsLoggedIn } from 'redux/users/selectors';
+import { useState } from 'react';
 
 export const Login = () => {
   const dispatch = useDispatch();
+  const [loginAttempt, setLoginAttempt] = useState(false);
 
   return (
     <>
@@ -18,6 +21,7 @@ export const Login = () => {
               password: form.elements.password.value,
             })
           );
+          setLoginAttempt(true);
           form.reset();
         }}
       >
@@ -48,6 +52,9 @@ export const Login = () => {
           Login
         </button>
       </form>
+      {!useSelector(selectIsLoggedIn) && loginAttempt && (
+        <p className={css.loginError}>Invalid credentials!</p>
+      )}
     </>
   );
 };
